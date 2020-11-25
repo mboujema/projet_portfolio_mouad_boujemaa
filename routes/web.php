@@ -37,3 +37,5 @@ Route::resource("/users", UserController::class);
 //create
 // Route::get("/user/create", [UserController::class, "create"]);
 
+//delete
+Route::get("/usersup/{id}/delete", [UserController::class, "destroy"]);
