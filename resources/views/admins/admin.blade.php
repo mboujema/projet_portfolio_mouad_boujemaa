@@ -21,7 +21,7 @@
 
         <div class="text-center">
             <h1 class="my-1 text-center">Users</h1>
-            <a href="" class="btn btn-primary my-3">create</a>
+            <a href="{{ route("users.create") }}" class="btn btn-primary my-3">create</a>
         </div>
         
 

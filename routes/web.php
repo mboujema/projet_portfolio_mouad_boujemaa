@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\FactsController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SkilsController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -19,13 +20,20 @@ use Illuminate\Support\Facades\Route;
 
 
 // index
-Route::get("/", [UserController::class, "index"])->name("welcome");
+Route::get("/", [HomeController::class, "index"])->name("welcome");
 
 //admin
 Route::get('/admin', [AdminController::class, "index"])->name("admin");
 
 
-//fact
+//ressource
 Route::resource("/facts", FactsController::class);
 
 Route::resource("/skils", SkilsController::class);
+
+Route::resource("/users", UserController::class);
+
+
+//create
+// Route::get("/user/create", [UserController::class, "create"]);
+
