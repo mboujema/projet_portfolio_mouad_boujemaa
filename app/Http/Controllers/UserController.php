@@ -35,7 +35,29 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new User();
+
+        $request-> validate([
+            "birthday" => "required",
+            "phone" => "required",
+            "city" => "required",
+            "age" => "required",
+            "degre" => "required",
+            "email" => "required",
+            "freelance" => "required",
+        ]);
+
+        $user->birthday = $request->birthday;
+        $user->phone = $request->phone;
+        $user->city = $request->city;
+        $user->age = $request->age;
+        $user->degre = $request->degre;
+        $user->email = $request->email;
+        $user->freelance = $request->freelance;
+
+        $user->save();
+
+        return redirect()->route("users.index"); //le name dans la console
     }
 
     /**

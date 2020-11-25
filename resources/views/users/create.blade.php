@@ -11,25 +11,25 @@
     
     <h1 class="text-center">create Users</h1>
 
-    <form class="container" action="" method="POST">
+    <form class="container" action="{{ ("users.store") }}" method="POST">
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">birthday</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="nom">
+                <input type="text" class="form-control" name="birthday">
             </div>
         </div>
 
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">phone</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="prenom">
+                <input type="text" class="form-control" name="phone">
             </div>
         </div>
 
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">city</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="age" >
+                <input type="text" class="form-control" name="city" >
             </div>
         </div>
 
@@ -43,21 +43,21 @@
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">degre</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="age" >
+                <input type="text" class="form-control" name="degre" >
             </div>
         </div>
 
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">email</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="age" >
+                <input type="text" class="form-control" name="email" >
             </div>
         </div>
 
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">freelance</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="age" >
+                <input type="text" class="form-control" name="freelance" >
             </div>
         </div>
 
